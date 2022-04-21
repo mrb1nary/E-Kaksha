@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.navbar{
+
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    background-color: #E6BA95;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(76, 61, 104);
+    justify-content: space-between;
+}
+
+.navbar__signout{
+    border: 1px solid red;
+    margin-right: 20px;
+    font-size: 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(231, 86, 86);
+    font-weight: 700;
+    transition: 300ms ease-in;
+}
+
+.navbar__signout:hover{
+    box-shadow: 5px 5px black;
+}
+
+.classes{
+    padding-left: 35px;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    align-items: left;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.classes__sub1{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 80px;
+    width: 350px;
+    background-color: blue;
+    color: white;
+    padding-left: 5px;
+    font-weight: 500;
+
+}
+
+.classes__sub2{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    /* height: 80px; */
+    width: 350px;
+    background-color: #F65555;
+    padding-left: 5px;
+    font-weight: 500;
+    color: white;
+}
+
+.classes__sub3{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    /* height: 80px; */
+    width: 350px;
+    background-color: #7C18FB;
+    padding-left: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.classes__sub4{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    /* height: 80px; */
+    width: 350px;
+    background-color: #218932;
+    padding-left: 5px;
+    font-weight: 500;
+    color: white;
+}
+
+.classes__sub{
+    transition:150ms ease-in;
+}
+
+.classes__sub:hover{
+    box-shadow: 5px 5px black;
+}
+
+.classes__timing{
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+.classes__timing>a{
+    text-decoration: none;
+    color: black;
+}
