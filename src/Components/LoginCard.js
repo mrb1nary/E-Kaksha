@@ -7,7 +7,7 @@ function LoginCard() {
   return (
     <div class="card">
 
-        <div className='logo'>Project X</div>
+        <div className='logo'>E-Kaksha</div>
         {/* <div className='subtitle'>Made with ☕ and 💖</div> */}
         <div className='signIn'>
                 <PersonIcon className='personIcon' fontSize="3rem"/>
