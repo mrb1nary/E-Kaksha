@@ -5,8 +5,11 @@ import {motion} from "framer-motion"
 function SubUnit() {
   return (
     <motion.div 
+
     className='subUnit'
-    
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{x:window.innerWidth}}
     
     >
         <div className='sub1 sub'>Unit 1</div>

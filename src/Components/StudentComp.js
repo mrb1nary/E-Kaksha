@@ -1,19 +1,34 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import { motion } from 'framer-motion'
+import "../js/StudentComp.js"
 
 import "../CSS/StudentComp.css"
+
+const blackBox = {
+    initial: {
+      height: "100vh",
+      bottom: 0,
+    },
+    animate: {
+      height: 0,
+      transition: {
+        duration: 1.5,
+        ease: [0.87, 0, 0.13, 1],
+      },
+    },
+  };
 
 
 function StudentComp() {
   return (
+      <div>
     <motion.div
-
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    exit={{opacity:0}}
-    
-    >
+    className="relative z-50 w-full bg-black"
+    initial="initial"
+    animate="animate"
+      variants={blackBox}
+  />     
         
 
 
@@ -66,7 +81,7 @@ function StudentComp() {
                 And here<br/>
                 </div>
         </div>
-    </motion.div>
+    </div>
   )
 }
 
