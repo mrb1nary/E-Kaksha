@@ -1,10 +1,19 @@
 import React from 'react'
+import {Link} from "react-router-dom"
+import { motion } from 'framer-motion'
+
 import "../CSS/StudentComp.css"
 
 
 function StudentComp() {
   return (
-    <div>
+    <motion.div
+
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    
+    >
         
 
 
@@ -33,10 +42,12 @@ function StudentComp() {
         <div className='notes'>
             Notes
             <div className='notes__sd'>
-                <div className='notes__sub1 notes__sub'>Computer Graphics</div>
-                <div className='notes__sub2 notes__sub'>Python</div>
-                <div className='notes__sub3 notes__sub'>Operating System</div>
-                <div className='notes__sub4 notes__sub'>Database Management</div>
+                
+                <Link to="SubUnit"><motion.div  className='notes__sub1 notes__sub' id="cg" >Computer Graphics</motion.div></Link>
+                <Link to="SubUnit"><motion.div  className='notes__sub2 notes__sub' id="py" >Python</motion.div></Link>
+                <Link to="SubUnit"><motion.div  className='notes__sub3 notes__sub' id="os" >Operating System</motion.div></Link>
+                <Link to="SubUnit"><motion.div  className='notes__sub4 notes__sub' id="dbms" >Database Management</motion.div></Link>
+    
             </div>
         </div>
 
@@ -55,7 +66,7 @@ function StudentComp() {
                 And here<br/>
                 </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
