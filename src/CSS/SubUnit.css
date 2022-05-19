@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,300&display=swap');
 
-*{
+:local *{
     box-sizing: border-box;
     margin: 0;
     font-family: 'Archivo', sans-serif;

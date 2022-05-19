@@ -17,7 +17,6 @@ a:-webkit-any-link{
     
 }
 
-
 .classes{
     padding-left: 35px;
     padding-top: 100px;
@@ -164,6 +163,9 @@ a:-webkit-any-link{
 }
 
 .notes__sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     padding: 10px 30px 10px 20px;
@@ -176,7 +178,7 @@ a:-webkit-any-link{
 
 .notice{
     font-weight: 800;
-    font-family: 'Poppins', sans-serif;
+    
     padding-left: 35px;
     padding-top: 100px;
     /* border: 1px solid red; */

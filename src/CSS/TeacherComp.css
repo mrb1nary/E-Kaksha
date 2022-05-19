@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+
+:local *{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+:local a:-webkit-any-link{
+    text-decoration: inherit;
+    color: inherit;
+    
+}
+
+
+.classes{
+    padding-left: 35px;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    width: 27%;
+    height: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    align-items: left;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.classes__sub1{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 80px;
+    width: 350px;
+    background-color: blue;
+    color: white;
+    padding-left: 5px;
+    font-weight: 500;
+
+}
+
+.classes__sub2{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    /* height: 80px; */
+    width: 350px;
+    background-color: #F65555;
+    padding-left: 5px;
+    font-weight: 500;
+    color: white;
+}
+
+.classes__sub3{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    /* height: 80px; */
+    width: 350px;
+    background-color: #7C18FB;
+    padding-left: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.classes__sub4{
+    /* border: 1px solid red; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    /* height: 80px; */
+    width: 350px;
+    background-color: #218932;
+    padding-left: 5px;
+    font-weight: 500;
+    color: white;
+}
+
+.classes__sub{
+    transition:150ms ease-in;
+}
+
+
+
+
+
+.classes__sub:hover{
+    box-shadow: 5px 5px black;
+}
+
+.classes__timing{
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+.classes__timing>a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.notes{
+    
+    padding-left: 35px;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    width: 33%;
+    height: 750px;
+    margin-left: 20px;
+    margin-top: 20px;
+    align-items: left;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+
+.notes__sd{
+    
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
+    height: 80%;
+    justify-content: center;
+   
+}
+
+
+
+.notes__sub1{
+    
+    background-color: #71BBFF;
+}
+
+
+.notes__sub2{
+    background-color: #FFAA7A;
+}
+
+.notes__sub3{
+    background-color: #48FFA7;
+}
+
+.notes__sub4{
+    background-color: #FFD600;
+}
+
+.notes__sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px 30px 10px 20px;
+    transition: 300ms ease-in-out;
+}
+
+.notes__sub:hover{
+    box-shadow: 10px 5px black;
+}
+
+.notice{
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 35px;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    width: 33%;
+    height: 80%;
+    margin-left: 30px;
+    margin-top: 20px;
+    align-items: left;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.notice__board{
+    margin-top: 70px;
+    /* border: 1px solid red; */
+    height: 550px;
+    font-size: 24px;
+    background-color: rgb(214, 176, 105);
+    line-height: 2.6rem;
+    transition: 300ms ease-in;
+    padding-left: 20px;
+}
+
+.notice__board:hover{
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+}

@@ -1,22 +1,40 @@
 import React from 'react'
 import '../CSS/LoginCard.css'
+import {Link} from "react-router-dom"
 
-import PersonIcon from '@mui/icons-material/Person';
+
 
 function LoginCard() {
   return (
-    <div class="card">
-
-        <div className='logo'>E-Kaksha</div>
-        {/* <div className='subtitle'>Made with ☕ and 💖</div> */}
-        <div className='signIn'>
-                <PersonIcon className='personIcon' fontSize="3rem"/>
-                <input className='signIn__username' type='text' name='username' placeholder='Username'></input>
-                <input className='signIn__password' type='password' name='password' placeholder='Password'></input>
-                <button className='signIn__submit'>Submit</button>
+    <div className='body-container'>
+      <div className="login-box">
+      <h2>Login</h2>
+      <form>
+        <div className="user-box">
+          <input type="text" name="" required=""/>
+          <label>Username</label>
+        </div>
+        <div className="user-box">
+          <input type="password" name="" required=""/>
+          <label>Password</label>
+        </div>
+        <div className='btn'>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+        
+          <a className='register' href="/register">
+            New User?
+          </a>
         
         </div>
+      </form>
     </div>
+  </div>
 
   )
 }

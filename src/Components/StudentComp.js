@@ -22,7 +22,7 @@ const blackBox = {
 
 function StudentComp() {
   return (
-      <div>
+      <div className='student-body'>
     <motion.div
     className="relative z-50 w-full bg-black"
     initial="initial"
@@ -36,19 +36,19 @@ function StudentComp() {
             Classes
             <div className='classes__sub1 classes__sub'>Computer Graphics
                 <div className='classes__timing'>9:00 AM <br/>
-                <a href='https://meet.google.com/ugt-qyuo-hop'>Meeting link</a><br/>Aliva Priyadarshani</div>
+                <a href='https://meet.google.com/ugt-qyuo-hop'><b>Meeting link</b></a><br/>Aliva Priyadarshani</div>
             </div>
             <div className='classes__sub2 classes__sub'>Python
                 <div className='classes__timing'>10:30 AM <br/>
-                <a href='https://meet.google.com/ugt-qyuo-hop'>Meeting link</a><br/>Aliva Priyadarshani</div>
+                <a href='https://meet.google.com/ugt-qyuo-hop'><b>Meeting link</b></a><br/>Aliva Priyadarshani</div>
             </div>
             <div className='classes__sub3 classes__sub'>Operating System
                 <div className='classes__timing'>12:00 PM <br/>
-                <a href='https://meet.google.com/ugt-qyuo-hop'>Meeting link</a><br/>Aliva Priyadarshani</div>
+                <a href='https://meet.google.com/ugt-qyuo-hop'><b>Meeting link</b></a><br/>Aliva Priyadarshani</div>
             </div>
             <div className='classes__sub4 classes__sub'>Database Management
                 <div className='classes__timing'>1:30 PM <br/>
-                <a href='https://meet.google.com/ugt-qyuo-hop'>Meeting link</a><br/>Aliva Priyadarshani</div>
+                <a href='https://meet.google.com/ugt-qyuo-hop'><b>Meeting link</b></a><br/>Aliva Priyadarshani</div>
             </div>
         </div>
 

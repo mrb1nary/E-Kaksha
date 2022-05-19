@@ -1,255 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&family=Source+Code+Pro:wght@300;400&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@1,200&family=Montserrat:wght@200&display=swap');
- 
- 
- @property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
+html {
+  height: 100%;
+}
+:local .body-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image: linear-gradient(#141e30, #243b55);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
   }
-  
-  :root {
-    --card-height: 80vh;
-    --card-width: calc(var(--card-height) / 1.5);
+  50%,100% {
+    left: 100%;
   }
-  
-  
-  body {
-    min-height: 100vh;
-    background: #212534;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-sizing: border-box;
-    font-family: "Source Code Pro", monospace;
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
   }
-  
-  
-  .card {
-    
-    background: #191c29;
-    width: var(--card-width);
-    height: var(--card-height);
-    padding: 3px;
-    position: relative;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 1.5em;
-    color: rgb(88 199 250 / 0%);
-    /* color: black; */
-    /* cursor: pointer; */
-    /* font-family: cursive; */
-    
+  50%,100% {
+    top: 100%;
   }
+}
 
+.register{
+  margin-left: 22px;
+}
 
-  .personIcon{
-    display: flex;
-    
-    margin-left: 1.4rem;
-    margin-bottom: 4rem;
-    font-size: 10rem;
-    justify-content: center;
-    /* border: 1px solid red; */
-    color: white;
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
   }
-
-  .signIn{
-
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    transition: 500ms ease-out;
-    /* border: 1px solid red; */
-    gap: 20px;
-
+  50%,100% {
+    right: 100%;
   }
+}
 
-  .signIn__username{
-    padding: 20px;
-    border-radius: 10px;
-    /* background: #46cabf; */
-    transition: 400ms linear;
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
   }
-
-  .signIn__username::placeholder{
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Bebas Neue', cursive;
-    /* color: white; */
-    /* background: #46cabf; */
-    
+  50%,100% {
+    bottom: 100%;
   }
-
-  .signIn__username:hover{
-    transition: 400ms linear;
-    font-size: larger;
-  }
-
-  .signIn__password{
-    padding: 20px;
-    border-radius: 10px;
-    /* background: #46cabf; */
-    transition: 400ms linear;
-  }
-
-  .signIn__password::placeholder{
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Bebas Neue', cursive;
-    /* color: white; */
-    /* background: #46cabf; */
-    
-  }
-
-  .signIn__password:hover{
-    transition: 400ms linear;
-    font-size: larger;
-  }
-
-
-
-  .signIn__submit{
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgb(228, 120, 78);
-    cursor: pointer;
-    font-family: 'Bebas Neue', cursive;
-  }
-
-  
-  .logo{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    color: white;
-    transition: 500ms ease-in;
-    /* border: 1px solid red; */
-    font-size: 6rem;
-    font-weight: 800;
-    background-image: url(https://images.unsplash.com/photo-1613216512260-494def845d68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
-  }
-
-  
-
-  .logo::before,
-  .logo::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-  }
-
-  .logo::before{
-    background: #191C29;
-    animation: typewriter 2s ease-in-out forwards;
-  }
-
-  @keyframes typewriter{
-    to {
-      left:100%
-    }
-  }
-
-  
-  
-  .card:hover .signIn {
-    color: rgb(88 199 250 / 100%);
-    transition: color 1s;
-    visibility: visible;
-    opacity: 1;
-    transition: 500ms ease-in;
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  .card:hover > .logo{
-    transition: 500ms ease-in;
-    display: none;
-  }
-
-
-  .card:hover:before, .card:hover:after .logo{
-    animation: none;
-    opacity: 0;
-  }
-  
-  
-  .card::before {
-    content: "";
-    width: 104%;
-    height: 102%;
-    border-radius: 8px;
-    background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2);
-      position: absolute;
-      z-index: -1;
-      top: -1%;
-      left: -2%;
-      animation: spin 2.5s linear infinite;
-      
-  }
-  
-  .card::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(
-      var(--rotate)
-      , #5ddcff, #3c67e3 43%, #4e00c2);
-      opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
-  }
-
-
-  
-  
-  @keyframes spin {
-    0% {
-      --rotate: 0deg;
-    }
-    100% {
-      --rotate: 360deg;
-    }
-  }
-  
-  a {
-    color: #212534;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 2rem;
-  }
-
-
-  
-
-  
+}

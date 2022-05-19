@@ -1,38 +1,38 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    /* border: 1px solid red; */
+:local * {
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
-.navbar{
-
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    background-color: #E6BA95;
-    border-radius: 25px;
-    color: rgb(0, 0, 0);
-    box-shadow: 5px 5px rgb(76, 61, 104);
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 800;
+  background-color: #e6ba95;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px rgb(76, 61, 104);
+  justify-content: space-between;
 }
 
-.navbar__signout{
-    border: 1px solid red;
-    margin-right: 20px;
-    font-size: 22px;
-    border-radius: 20px;
-    cursor: pointer;
-    background-color: rgb(231, 86, 86);
-    font-weight: 700;
-    transition: 300ms ease-in;
+.navbar__signout {
+  border: 1px solid red;
+  margin-right: 20px;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(231, 86, 86);
+  font-weight: 700;
+  transition: 300ms ease-in;
 }
 
-.navbar__signout:hover{
-    box-shadow: 5px 5px black;
+.navbar__signout:hover {
+  box-shadow: 5px 5px black;
 }
