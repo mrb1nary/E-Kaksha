@@ -71,14 +71,11 @@ function StudentComp() {
         <div className='notice'>
             Notice
             <div className='notice__board'>
-                Something important goes here<br/>
-                And here<br/>
-                Something important goes here<br/>
-                And here<br/>
-                Something important goes here<br/>
-                And here<br/>
-                Something important goes here<br/>
-                And here<br/>
+                <p>Classes suspended for 31/05/22</p>
+                <p>College will reopen from 15/06/22</p>
+                <p>Holiday declared on 16/02/22</p>
+                <p>CG Class cancelled</p>
+                
                 </div>
         </div>
     </div>

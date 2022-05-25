@@ -3,12 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
 *{
     margin: 0;
     box-sizing: border-box;
     /* border: 1px solid red; */
+    
 }
 
 a:-webkit-any-link{
@@ -17,7 +20,14 @@ a:-webkit-any-link{
     
 }
 
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(21deg, rgba(255,255,255,1) 0%, rgba(46,86,108,1) 36%, rgba(0,0,0,1) 69%);
+    
+}
+
 .classes{
+    font-family: 'Kalam', cursive;
     padding-left: 35px;
     padding-top: 100px;
     /* border: 1px solid red; */
@@ -29,14 +39,16 @@ a:-webkit-any-link{
     margin-top: 20px;
     align-items: left;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 600;
+    color: white;
+    
 }
 
 .classes__sub1{
     /* border: 1px solid red; */
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     width: 350px;
     background-color: blue;
     color: white;
@@ -85,6 +97,7 @@ a:-webkit-any-link{
 }
 
 .classes__sub{
+    
     transition:150ms ease-in;
 }
 
@@ -113,7 +126,7 @@ a:-webkit-any-link{
 
 
 .notes{
-    
+    font-family: 'Kalam', cursive;
     padding-left: 35px;
     padding-top: 100px;
     /* border: 1px solid red; */
@@ -126,12 +139,14 @@ a:-webkit-any-link{
     align-items: left;
     font-size: 40px;
     font-weight: 800;
+    color: white;
 }
 
 
 
 .notes__sd{
-    
+
+    font-family: 'Fira Sans', sans-serif;
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -147,6 +162,7 @@ a:-webkit-any-link{
 .notes__sub1{
     
     background-color: #71BBFF;
+    background-color: linear-gradient(0,0,5);
 }
 
 
@@ -170,6 +186,7 @@ a:-webkit-any-link{
     width: 100%;
     padding: 10px 30px 10px 20px;
     transition: 300ms ease-in-out;
+    border-radius: 20%;
 }
 
 .notes__sub:hover{
@@ -177,31 +194,41 @@ a:-webkit-any-link{
 }
 
 .notice{
+    font-family: 'Kalam', cursive;
     font-weight: 800;
-    
+    color: white;
     padding-left: 35px;
     padding-top: 100px;
     /* border: 1px solid red; */
     display: inline-flex;
     flex-direction: column;
     width: 33%;
-    height: 80%;
+    height: 85%;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: left;
     font-size: 40px;
     font-weight: 800;
+    
 }
 
 .notice__board{
-    margin-top: 70px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 40px;
     /* border: 1px solid red; */
-    height: 550px;
+    height: 630px;
     font-size: 24px;
-    background-color: rgb(214, 176, 105);
+    background: rgb(148,187,233);
+    background: radial-gradient(circle, rgba(148,187,233,1) 25%, rgba(31,49,84,1) 79%, rgba(41,47,88,1) 97%);
+    background-size: cover;
     line-height: 2.6rem;
     transition: 300ms ease-in;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    border-radius: 8%;
+    line-height: 5rem;
+    /* color:black; */
+    
 }
 
 .notice__board:hover{

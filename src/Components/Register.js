@@ -14,22 +14,27 @@ function Register() {
 
 
         <div className="user-box">
-          <input type="text" name="" required=""/>
+          <input type="text" name="username" required=""/>
           <label>Username</label>
+        </div>
+
+        <div className="user-box">
+          <input type="email" name="email" required=""/>
+          <label>Email</label>
         </div>
 
         
         <div className="user-box">
-          <input type="id" name="" required=""/>
+          <input type="id" name="id" required=""/>
           <label>Student/Teacher ID</label>
         </div>
 
         <div className="user-box">
-          <input type="password" name="" required=""/>
+          <input type="password" name="password" required=""/>
           <label>Password</label>
         </div>
         <div className="user-box">
-          <input type="cpassword" name="" required=""/>
+          <input type="password" name="cpassword" required=""/>
           <label>Confirm Password</label>
         </div>
 
