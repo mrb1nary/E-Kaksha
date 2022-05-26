@@ -30,15 +30,16 @@ function LoginCard() {
 
   //Function to validate form data
   function formSubmit() {
-    if (formData.username === "") {
-      alert("Username required")
-      return
+    if (formData.username.length<3) {
+      alert("Username should be greater than 3");
+      return;
     }
 
-    if (formData.password === "") {
-      alert("Password required")
-      return
+    if (formData.password.length<5 ) {
+      alert("Password length must be greater than 5");
+      return;
     }
+    
     sendData()
   }
 
